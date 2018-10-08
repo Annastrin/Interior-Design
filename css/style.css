@@ -58,6 +58,11 @@ table {
 }
 
 @font-face {
+    font-family: RalewayLight;
+    src: url(../fonts/Raleway-Light.ttf);
+}
+
+@font-face {
     font-family: RalewayRegular;
     src: url(../fonts/Raleway-Regular.ttf);
 }
@@ -73,13 +78,13 @@ table {
 }
 
 @font-face {
-    font-family: RalewayExtraBold;
-    src: url(../fonts/Raleway-ExtraBold.ttf);
+    font-family: RalewayBold;
+    src: url(../fonts/Raleway-Bold.ttf);
 }
 
 @font-face {
-    font-family: RalewayLight;
-    src: url(../fonts/Raleway-Light.ttf);
+    font-family: RalewayExtraBold;
+    src: url(../fonts/Raleway-ExtraBold.ttf);
 }
 
 body {
@@ -509,7 +514,7 @@ div.services div.info-block-right p {
 
 div.services div.info-block-right a {
     display: block;
-    font-family: RalewayExtraBold, serif;
+    font-family: RalewayExtraBold, sans-serif;
     font-size: 15px;
     letter-spacing: 1.5px;
     color: #00203a;
@@ -561,7 +566,7 @@ div.video-info div.button-play {
 }
 
 div.video-info p {
-    font-family: RalewayRegular, serif;
+    font-family: RalewayRegular, sans-serif;
     font-size: 18px;
     letter-spacing: 0.5px;
     text-align: center;
@@ -599,7 +604,7 @@ div.stages div.stage-number p {
     text-align: center;    
     vertical-align: middle;
     line-height: 22px;
-    font-family: RalewayMedium, serif;
+    font-family: RalewayMedium, sans-serif;
     font-size: 12px;    
     color: #00203a;
     background-color: #fde5d1;
@@ -628,7 +633,7 @@ div.stages div.border-3 {
 }
 
 div.stages h3.stage-title {
-    font-family: RalewaySemiBold, serif;
+    font-family: RalewaySemiBold, sans-serif;
     font-size: 22px;
     line-height: 0.8;
     color: #313131;
@@ -647,7 +652,7 @@ div.stages div.stage-description hr {
 }
 
 div.stages ul li p {
-    font-family: RalewayLight, serif;
+    font-family: RalewayLight, sans-serif;
     line-height: 1.56;
     color: #5e5e5e;
 }
@@ -658,19 +663,19 @@ div.order {
     background-image: url('file:///C:/Projects/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82%D1%8B/%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80%D0%BE%D0%B2/site/img/form-img.png');
     background-repeat: no-repeat;
     background-position: right center;
-    height: 683px;    
+    min-height: 683px;    
 }
 
 div.order-form {
     width: 50%;
-    height: 683px;
+    min-height: 683px;
     background-color: #182c3d;
     color: rgba(255, 255, 255, 0.7);        
 }
 
 div.order-form form {
     margin-right: 95px;   
-    padding-top: 75px; 
+    padding-top: 65px; 
 }
 
 div.order-form h2.order-title {
@@ -700,7 +705,7 @@ div.order-form div.form-group {
 
 div.order-form div.form-group label { 
     width: 100px;   
-    font-family: RalewayLight, serif;
+    font-family: RalewayLight, sans-serif;
     font-size: 14px;
     line-height: 22px;
     vertical-align: middle;
@@ -718,7 +723,7 @@ div.order-form div.form-group input {
     padding-right: 75px;
     margin-bottom: 14px;
     outline: none;
-    font-family: RalewayLight, serif;
+    font-family: RalewayLight, sans-serif;
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.7px;
@@ -741,4 +746,89 @@ div.order-form div.form-group input#email {
     background-image: url('file:///C:/Projects/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82%D1%8B/%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80%D0%BE%D0%B2/site/img/form-mail-icon.png');
     background-repeat: no-repeat;
     background-position: 99% center;
+}
+
+div.order-form input[type="submit"] {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 45px;
+    padding: 25px;
+    background-color: transparent;
+    border: solid 2px #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 49px 19px rgba(0, 0, 1, 0.02);
+    text-transform: uppercase;
+    font-family: RalewayExtraBold, sans-serif;
+    font-size: 15px;
+    line-height: 1.1;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #fff;    
+    cursor: pointer;
+}
+
+div.order-form input[type="submit"]:hover {
+    background-color: #f8a25a;
+    border-color: #f8a25a;    
+}
+
+div.order-form p.agreement {
+    font-family: RalewayLight, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 20px;
+}
+
+/* REVIEWS */
+div.reviews {
+    padding-top: 155px;
+    padding-bottom: 243px;
+}
+
+div.review-item {
+    width: fit-content;
+    margin-top: 85px;
+    margin-left: auto;
+    margin-right: auto;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.review-item  blockquote {         
+    box-sizing: border-box; 
+    width: 652px;
+    height: 273px;  
+    background-color: #fff;
+    box-shadow: 4px 6.9px 36.7px 14.3px rgba(0, 0, 1, 0.02);     
+    padding-top: 55px;
+    padding-left: 70px;       
+}
+
+div.review-item img {
+    margin-top: 38px;
+    margin-left: -75px;
+}
+
+div.review-item blockquote cite.review-author {
+    font-family: RalewaySemiBold, sans-serif;
+    font-size: 22px;
+    line-height: 1.36;
+    color: #313131;    
+}
+
+div.review-item blockquote p.review-service {
+    font-family: RalewayBold, sans-serif;
+    letter-spacing: 1.2px;
+    color: #efb172;
+    padding-top: 10px;
+}
+
+div.review-item blockquote p.review {
+    width: 440px;
+    font-family: RalewayLight, sans-serif;
+    line-height: 1.56;
+    color: #5e5e5e;
+    padding-top: 28px;
 }
