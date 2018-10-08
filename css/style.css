@@ -665,12 +665,12 @@ div.order-form {
     width: 50%;
     height: 683px;
     background-color: #182c3d;
-    color: rgba(255, 255, 255, 0.7);
-    padding-top: 75px;    
+    color: rgba(255, 255, 255, 0.7);        
 }
 
 div.order-form form {
-    margin-right: 95px;
+    margin-right: 95px;   
+    padding-top: 75px; 
 }
 
 div.order-form h2.order-title {
@@ -694,10 +694,51 @@ div.order-form div.form-group {
     margin-top: 35px;
     display: flex;
     flex-direction: row;
+    border-bottom: solid 2px rgba(253, 229, 209, 0.53);
+    border-radius: 1px;
+}
+
+div.order-form div.form-group label { 
+    width: 100px;   
+    font-family: RalewayLight, serif;
+    font-size: 14px;
+    line-height: 22px;
+    vertical-align: middle;
+    letter-spacing: 0.7px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 14px;    
 }
 
 div.order-form div.form-group input {
     background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
     border: none;
     width: 100%;
+    height: 20px;    
+    padding-right: 75px;
+    margin-bottom: 14px;
+    outline: none;
+    font-family: RalewayLight, serif;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.7px;
+    text-align: center;    
+}
+
+div.order-form div.form-group input#name {
+    background-image: url('file:///C:/Projects/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82%D1%8B/%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80%D0%BE%D0%B2/site/img/form-name-icon.png');
+    background-repeat: no-repeat;
+    background-position: 99% center;
+}
+
+div.order-form div.form-group input#phone {
+    background-image: url('file:///C:/Projects/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82%D1%8B/%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80%D0%BE%D0%B2/site/img/form-phone-icon.png');
+    background-repeat: no-repeat;
+    background-position: 99% center;
+}
+
+div.order-form div.form-group input#email {
+    background-image: url('file:///C:/Projects/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82%D1%8B/%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80%D0%BE%D0%B2/site/img/form-mail-icon.png');
+    background-repeat: no-repeat;
+    background-position: 99% center;
 }
